@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "BOT_TOKEN": "TELEGRAM_BOT_TOKEN",
+            "CHAT_ID": "TELEGRAM_CHAT_ID_TO_SEND_THE_NOTIFICATION",
+            "CONSUMER_NO": "KSEB_CONSUMER_NO"
+        }
+    ]
+}
