@@ -61,7 +61,7 @@ This Python script checks for scheduled power outages from the KSEB website for 
 
 1. **Run the script manually**:
    ```bash
-   python check.py
+   python3 check_outage.py
    ```
 
 2. **Schedule the script to run every 6 hours**:
@@ -71,7 +71,8 @@ This Python script checks for scheduled power outages from the KSEB website for 
      ```
      Add the following line:
      ```bash
-     0 */6 * * * /usr/bin/python3 /path/to/your/script.py
+     0 */6 * * * cd ~/path/to/your/script/ && echo "Run at: $(date)" >> logfile.log && /usr/bin/python3 check_outage.py >> logfile.log 2>&1
+
      ```
    - **For Windows**: Use Task Scheduler to create a task that runs the script every 6 hours.
 
